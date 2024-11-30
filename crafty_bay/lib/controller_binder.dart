@@ -1,29 +1,30 @@
-import 'package:crafty_bay/data/services/network_caller.dart';
-import 'package:crafty_bay/presentation/state_holders/add_to_cart_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/auth_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/bottom_nav_bar_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/cart_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/category_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/create_cart_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/create_product_review_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/create_profile_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/create_wish_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/delete_cart_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/email_verification_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/invoice_creation_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/new_product_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/otp_verification_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/popular_product_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/product_details_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/product_list_by_category_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/read_profile_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/review_profile_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/slider_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/special_product_list_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/time_count_controller.dart';
-import 'package:crafty_bay/presentation/state_holders/wish_list_controller.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
+
+import 'data/services/network_caller.dart';
+import 'view_model/add_to_cart_controller.dart';
+import 'view_model/auth_controller.dart';
+import 'view_model/bottom_nav_bar_controller.dart';
+import 'view_model/cart_list_controller.dart';
+import 'view_model/category_list_controller.dart';
+import 'view_model/create_cart_list_controller.dart';
+import 'view_model/create_product_review_controller.dart';
+import 'view_model/create_profile_controller.dart';
+import 'view_model/create_wish_list_controller.dart';
+import 'view_model/delete_cart_controller.dart';
+import 'view_model/email_verification_controller.dart';
+import 'view_model/invoice_creation_controller.dart';
+import 'view_model/new_product_list_controller.dart';
+import 'view_model/otp_verification_controller.dart';
+import 'view_model/popular_product_list_controller.dart';
+import 'view_model/product_details_controller.dart';
+import 'view_model/product_list_by_category_controller.dart';
+import 'view_model/read_profile_controller.dart';
+import 'view_model/review_profile_controller.dart';
+import 'view_model/slider_list_controller.dart';
+import 'view_model/special_product_list_controller.dart';
+import 'view_model/time_count_controller.dart';
+import 'view_model/wish_list_controller.dart';
 
 class ControllerBinder extends Bindings {
   void dependencies() {
@@ -58,5 +59,6 @@ class ControllerBinder extends Bindings {
     Get.put(DeleteCartController());
     Get.put(InvoiceCreationController());
     Get.put(CreateProductReviewController());
+    Get.put(TimeCountController());
   }
 }

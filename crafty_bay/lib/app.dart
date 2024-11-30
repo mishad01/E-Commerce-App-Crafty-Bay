@@ -1,10 +1,11 @@
-import 'package:crafty_bay/controller_binder.dart';
-import 'package:crafty_bay/presentation/ui/screens/auth/splash_screen.dart';
-import 'package:crafty_bay/presentation/ui/screens/category_screen.dart';
-import 'package:crafty_bay/presentation/ui/screens/main_bottom_navbar_screen.dart';
-import 'package:crafty_bay/presentation/ui/utils/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'controller_binder.dart';
+import 'resources/app_color.dart';
+import 'view/auth/splash_screen.dart';
+import 'view/categories/category_screen.dart';
+import 'view/home/main_bottom_navbar_screen.dart';
 
 class CraftyBay extends StatelessWidget {
   const CraftyBay({super.key});
